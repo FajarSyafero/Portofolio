@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Fajar Syafero - Web Developer, IT Support, dan Network Engineer.">
+  <title>Portofolio | Fajar Syafero</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a202c;
+      background-image: radial-gradient(circle at 1px 1px, rgba(0, 229, 255, 0.08) 1px, transparent 0);
+      background-size: 30px 30px;
+      scroll-behavior: smooth;
+    }
+    .nav-link.active {
+      color: #2dd4bf; /* teal-400 */
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="selection:bg-teal-300 selection:text-teal-900">
+
+  <!-- Header & Navigasi -->
+  <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#hero" class="logo text-xl font-bold text-teal-400 hover:text-teal-300 transition">Fajar Syafero</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="nav-link hover:text-teal-400 transition-colors">Tentang Saya</a></li>
+        <li><a href="#skills" class="nav-link hover:text-teal-400 transition-colors">Keahlian</a></li>
+        <li><a href="#experience" class="nav-link hover:text-teal-400 transition-colors">Pengalaman</a></li>
+        <li><a href="#education" class="nav-link hover:text-teal-400 transition-colors">Pendidikan</a></li>
+        <li><a href="#projects" class="nav-link hover:text-teal-400 transition-colors">Proyek</a></li>
+        <li><a href="#contact" class="nav-link hover:text-teal-400 transition-colors">Kontak</a></li>
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+      <ul class="flex flex-col items-center py-4 space-y-4">
+        <li><a href="#about" class="nav-link hover:text-teal-400">Tentang Saya</a></li>
+        <li><a href="#skills" class="nav-link hover:text-teal-400">Keahlian</a></li>
+        <li><a href="#experience" class="nav-link hover:text-teal-400">Pengalaman</a></li>
+        <li><a href="#education" class="nav-link hover:text-teal-400">Pendidikan</a></li>
+        <li><a href="#projects" class="nav-link hover:text-teal-400">Proyek</a></li>
+        <li><a href="#contact" class="nav-link hover:text-teal-400">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="hero" class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-16 min-h-screen">
+      <div class="md:w-1/2 text-center md:text-left">
+        <p class="text-sm font-semibold text-teal-400 uppercase">Software Developer & Technology Enthusiast</p>
+        <h1 class="text-5xl md:text-6xl font-extrabold mt-3 text-white leading-tight">Halo, saya <span class="text-teal-400">Fajar Syafero</span></h1>
+        <p class="text-xl md:text-2xl font-light text-gray-400 mt-3">Web Developer | IT Support | Network Engineer</p>
+        <p class="text-gray-300 mt-5 leading-relaxed">
+          Seorang profesional dengan passion di bidang teknologi, menggabungkan keahlian sebagai 
+          <span class="text-white font-medium">Web Developer</span>, 
+          <span class="text-white font-medium">IT Support</span>, 
+          <span class="text-white font-medium">Network Engineer</span> 
+          untuk menciptakan solusi digital yang efisien dan andal.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-8">
+          <a href="CV-FajarSyafero.pdf" download class="bg-teal-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-500 hover:scale-105 transition">DOWNLOAD CV</a>
+          <div class="flex space-x-4">
+            <a href="https://github.com/FajarSyafero" target="_blank" class="w-12 h-12 flex items-center justify-center bg-gray-800 text-gray-300 rounded-full hover:bg-gray-700 hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/fajarsyafero" target="_blank" class="w-12 h-12 flex items-center justify-center bg-gray-800 text-gray-300 rounded-full hover:bg-gray-700 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/coocouu/" target="_blank" class="w-12 h-12 flex items-center justify-center bg-gray-800 text-gray-300 rounded-full hover:bg-gray-700 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-72 h-72 rounded-full border-4 border-teal-400 overflow-hidden shadow-xl">
+          <img src="foto_profil.jpeg" alt="Foto Profil Fajar Syafero" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="container mx-auto px-4 py-20 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Tentang Saya</h2>
+      <div class="bg-gray-800 rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+        <p class="text-gray-300 leading-relaxed text-center">
+          Halo, saya <span class="text-white font-medium">Fajar Syafero</span>! Saya suka dunia teknologi, khususnya di bidang  
+          <span class="text-white">Web Development</span>, <span class="text-white">IT Support</span>, dan 
+          <span class="text-white">Network Engineering</span>. Buat saya, bikin web yang responsif dan menjaga sistem IT tetap stabil itu bukan sekadar pekerjaan, tapi bagian dari tantangan seru yang selalu bikin penasaran untuk terus belajar dan berkembang.
+        </p>
+      </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="container mx-auto px-4 py-20 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Keahlian</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold text-teal-400">Web Development</h3>
+          <p class="text-gray-300 mt-2">HTML, CSS, JavaScript, React.js, Node.js, PHP, Laravel, Bootstrap</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold text-teal-400">IT Support</h3>
+          <p class="text-gray-300 mt-2">software, hardware, user support</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold text-teal-400">Network Engineering</h3>
+          <p class="text-gray-300 mt-2">Cisco, LAN, WiFi, cabling, troubleshooting</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience" class="container mx-auto px-4 py-20 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Pengalaman Kerja</h2>
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-2xl font-semibold text-teal-400">IT Support - PT Contoh Abadi</h3>
+          <p class="text-gray-400 text-sm mb-2">Jan 2022 - Des 2023</p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Menangani troubleshooting software dan hardware harian.</li>
+            <li>Mengelola sistem jaringan lokal (LAN/WAN) untuk 50+ karyawan.</li>
+            <li>Menyediakan pelatihan dasar IT untuk staff baru.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition">
+          <h3 class="text-2xl font-semibold text-teal-400">Web Developer Freelance</h3>
+          <p class="text-gray-400 text-sm mb-2">2021 - Sekarang</p>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Membangun website portofolio dan landing page untuk UMKM.</li>
+            <li>Menggunakan stack HTML, CSS, JavaScript, dan PHP.</li>
+            <li>Meningkatkan performa website hingga 40% lebih cepat.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education" class="container mx-auto px-4 py-20 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Riwayat Pendidikan</h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition text-left">
+          <h3 class="text-xl font-semibold text-white">Universitas Yarsi</h3>
+          <p class="text-teal-400">S1 Teknik Informatika | 2020 - 2024</p>
+          <p class="text-gray-400 mt-2">Fokus pada pengembangan aplikasi web, jaringan komputer, dan keamanan siber.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition text-left">
+          <h3 class="text-xl font-semibold text-white">SMA TAMAN MADYA 1</h3>
+          <p class="text-teal-400">Matematika dan Ilmu Pengetahuan Alam (MIPA) | 2017 - 2020</p>
+          <p class="text-gray-400 mt-2">Mempelajari dasar-dasar jaringan, pemrograman, dan perakitan komputer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects" class="container mx-auto px-4 py-20 min-h-screen">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Proyek</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="projek_1.png" alt="Proyek 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white">Proyek 1 manajemen data tanaman obat </h3>
+            <p class="text-gray-400 mt-2">sistem manajemen data tanaman obat berbasis web.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="projek_2.png" alt="Proyek 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white">Nama Proyek 2</h3>
+            <p class="text-gray-400 mt-2">Deskripsi singkat proyek ini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="container mx-auto px-4 py-20 text-center min-h-screen">
+      <h2 class="text-4xl font-bold mb-6 text-white">Kontak</h2>
+      <p class="text-gray-300 mb-10">Tertarik bekerja sama? Silakan hubungi saya melalui:</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:email@contoh.com" class="text-white bg-gray-800 rounded-full px-6 py-3 shadow-lg hover:bg-teal-400 hover:text-gray-900 transition"><i class="fas fa-envelope mr-2"></i>Email</a>
+        <a href="https://www.linkedin.com/in/fajarsyafero/" target="_blank" class="text-white bg-gray-800 rounded-full px-6 py-3 shadow-lg hover:bg-teal-400 hover:text-gray-900 transition"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+        <a href="https://github.com/FajarSyafero" target="_blank" class="text-white bg-gray-800 rounded-full px-6 py-3 shadow-lg hover:bg-teal-400 hover:text-gray-900 transition"><i class="fab fa-github mr-2"></i>GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-700">
+    <p>&copy; 2025 Fajar Syafero. Semua Hak Cipta Dilindungi.</p>
+  </footer>
+
+  <script>
+    // highlight menu aktif
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
