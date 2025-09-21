@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keahlian | Fajar Syafero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* Background pola titik */
+    body {
+      background-color: #111827; /* gray-900 */
+      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Animasi fadeIn */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="selection:bg-teal-300 selection:text-teal-900 text-white">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md fixed w-full top-0 left-0 z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Fajar Syafero</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="nav-link hover:text-teal-400">Beranda</a></li>
+        <li><a href="about.html" class="nav-link hover:text-teal-400">Tentang Saya</a></li>
+        <li><a href="skills.html" class="nav-link text-teal-400 font-bold">Keahlian</a></li>
+        <li><a href="experience.html" class="nav-link hover:text-teal-400">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link hover:text-teal-400">Pendidikan</a></li>
+        <li><a href="projects.html" class="nav-link hover:text-teal-400">Proyek</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-teal-400">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="container mx-auto px-4 py-28 min-h-screen">
+    <h2 class="text-4xl font-bold text-center mb-12 animate-fadeIn">Keahlian</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Web Development -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl transition animate-fadeIn">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gray-700 text-teal-400">
+          <i class="fas fa-code text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p class="text-gray-300">HTML, CSS, JavaScript, PHP (Laravel), TailwindCSS.</p>
+      </div>
+      
+      <!-- Networking -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl transition animate-fadeIn">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gray-700 text-teal-400">
+          <i class="fas fa-network-wired text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Networking</h3>
+        <p class="text-gray-300">Routing, Switching, LAN/WAN, Packet Tracer, Firewall.</p>
+      </div>
+      
+      <!-- IT Support -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-2xl transition animate-fadeIn">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gray-700 text-teal-400">
+          <i class="fas fa-tools text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">IT Support</h3>
+        <p class="text-gray-300">Troubleshooting hardware/software, system maintenance, Windows/Linux.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6">
+    <p class="text-gray-400">&copy; 2025 Fajar Syafero. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

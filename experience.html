@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengalaman | Fajar Syafero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* Background pola titik */
+    body {
+      background-color: #111827; /* gray-900 */
+      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Animasi fadeIn */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="selection:bg-teal-300 selection:text-teal-900 text-white">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md fixed w-full top-0 left-0 z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Fajar Syafero</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="nav-link hover:text-teal-400">Beranda</a></li>
+        <li><a href="about.html" class="nav-link hover:text-teal-400">Tentang Saya</a></li>
+        <li><a href="skills.html" class="nav-link hover:text-teal-400">Keahlian</a></li>
+        <li><a href="experience.html" class="nav-link text-teal-400 font-bold">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link hover:text-teal-400">Pendidikan</a></li>
+        <li><a href="projects.html" class="nav-link hover:text-teal-400">Proyek</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-teal-400">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="container mx-auto px-4 py-28 min-h-screen">
+    <h2 class="text-4xl font-bold text-center mb-12 animate-fadeIn">Pengalaman</h2>
+    <div class="space-y-6 max-w-3xl mx-auto">
+
+      <!-- IT Support -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition animate-fadeIn">
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-laptop-code text-3xl text-teal-400"></i>
+          <div>
+            <h3 class="text-xl font-semibold">Web Developer Intern – Optima ITT Yarsi</h3>
+            <p class="text-gray-400 text-sm">2024 – 2025</p>
+            <p class="text-gray-300 mt-2">Mengembangkan dan mengelola sistem informasi akademik dan pendaftaran mahasiswa (PMB) Universitas YARSI menggunakan PHP dan Laravel, termasuk pengembangan modul Kelulusan dan Wisuda serta penambahan fitur baru pada web RKAT, meningkatkan efisiensi proses administrasi kampus.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asisten Dosen -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-105 hover:shadow-2xl transition animate-fadeIn">
+        <div class="flex items-start space-x-4">
+          <i class="fas fa-chalkboard-teacher text-3xl text-teal-400"></i>
+          <div>
+            <h3 class="text-xl font-semibold">Asisten Dosen – Universitas Yarsi</h3>
+            <p class="text-gray-400 text-sm">2023 – 2024</p>
+            <p class="text-gray-300 mt-2">Memberikan asistensi untuk tiga mata kuliah (Basis Data, Riset dan Development, dan Human-computer Interaction), termasuk menilai dan memberikan umpan balik konstruktif pada tugas-tugas mahasiswa.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6">
+    <p class="text-gray-400">&copy; 2025 Fajar Syafero. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

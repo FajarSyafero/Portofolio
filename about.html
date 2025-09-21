@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya | Fajar Syafero</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Background pola titik */
+    body {
+      background-color: #111827; /* gray-900 */
+      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Animasi fadeIn */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-gray-800 shadow-lg z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Fajar Syafero</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="nav-link hover:text-teal-400">Beranda</a></li>
+        <li><a href="about.html" class="nav-link text-teal-400 font-bold">Tentang Saya</a></li>
+        <li><a href="skills.html" class="nav-link hover:text-teal-400">Keahlian</a></li>
+        <li><a href="experience.html" class="nav-link hover:text-teal-400">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link hover:text-teal-400">Pendidikan</a></li>
+        <li><a href="projects.html" class="nav-link hover:text-teal-400">Proyek</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-teal-400">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tentang Saya -->
+  <main class="container mx-auto px-4 py-32 flex flex-col items-center justify-center min-h-screen text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-white animate-fadeIn">Tentang Saya</h2>
+    
+    <div class="bg-gray-800 p-8 rounded-xl shadow-lg max-w-3xl animate-fadeIn">
+      <p class="text-lg leading-relaxed text-gray-300 text-justify">
+        Halo, saya <span class="font-bold text-white">Fajar Syafero!</span>  
+        Saya suka dunia teknologi, khususnya di bidang 
+        <span class="font-semibold text-teal-400">Web Development</span>, 
+        <span class="font-semibold text-teal-400">IT Support</span>, dan 
+        <span class="font-semibold text-teal-400">Network Engineering</span>.  
+        Buat saya, bikin web yang responsif dan menjaga sistem IT tetap stabil itu bukan sekadar pekerjaan, 
+        tapi bagian dari tantangan seru yang selalu bikin penasaran untuk terus belajar dan berkembang.
+      </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+    © 2025 Fajar Syafero. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Fajar Syafero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* Background pola titik */
+    body {
+      background-color: #111827; /* gray-900 */
+      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Animasi fadeIn */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-gray-800 shadow-lg z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Fajar Syafero</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="nav-link hover:text-teal-400">Beranda</a></li>
+        <li><a href="about.html" class="nav-link hover:text-teal-400">Tentang Saya</a></li>
+        <li><a href="skills.html" class="nav-link hover:text-teal-400">Keahlian</a></li>
+        <li><a href="experience.html" class="nav-link hover:text-teal-400">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link hover:text-teal-400">Pendidikan</a></li>
+        <li><a href="projects.html" class="nav-link hover:text-teal-400">Proyek</a></li>
+        <li><a href="contact.html" class="nav-link text-teal-400 font-bold">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Kontak -->
+  <main class="container mx-auto px-4 py-32 flex flex-col items-center justify-center min-h-screen text-center animate-fadeIn">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Kontak</h2>
+    <p class="text-lg text-gray-300 mb-10">Tertarik bekerja sama? Silakan hubungi saya melalui:</p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- Email -->
+      <a href="mailto:syafero.fajar@gmail.com" class="flex items-center space-x-2 bg-gray-800 py-3 px-6 rounded-full shadow-lg hover:bg-teal-500 hover:scale-105 transition transform">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/fajarsyafero" target="_blank" class="flex items-center space-x-2 bg-gray-800 py-3 px-6 rounded-full shadow-lg hover:bg-teal-500 hover:scale-105 transition transform">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/fajarsyafero" target="_blank" class="flex items-center space-x-2 bg-gray-800 py-3 px-6 rounded-full shadow-lg hover:bg-teal-500 hover:scale-105 transition transform">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <!-- Form Kontak (opsional) -->
+    <div class="mt-16 w-full max-w-lg bg-gray-800 rounded-xl p-8 shadow-lg text-left">
+      <h3 class="text-2xl font-bold mb-6 text-center">Kirim Pesan</h3>
+      <form action="mailto:syafero.fajar@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+        <input type="text" placeholder="Nama" class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-teal-400 focus:ring focus:ring-teal-500 focus:ring-opacity-50 outline-none">
+        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-teal-400 focus:ring focus:ring-teal-500 focus:ring-opacity-50 outline-none">
+        <textarea placeholder="Pesan" rows="4" class="w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-teal-400 focus:ring focus:ring-teal-500 focus:ring-opacity-50 outline-none"></textarea>
+        <button type="submit" class="w-full bg-teal-400 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-teal-500 hover:scale-105 transition transform">Kirim</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+    © 2025 Fajar Syafero. All rights reserved.
+  </footer>
+
+</body>
+</html>
